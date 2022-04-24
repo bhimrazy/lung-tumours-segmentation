@@ -22,6 +22,13 @@ segmentor/
 ├── train.py         - training components
 └── utils.py         - supplementary utilities
 ```
+## Workflows
+
+1. Set up environment.
+```bash
+python -m venv venv         # create environment
+source venv/bin/activate    # activate environment 
+```
 
 ## Acknowledgements
 
