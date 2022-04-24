@@ -1,8 +1,11 @@
 # Lungs-Tumor-segmentation
+
 This project aims to segment lungs tumor from CT scans of Decathlon Lungs dataset using Pytorch and MONAI .
 
-> This project is ***still under development***.
+> This project is **_still under development_**.
+
 ## Directory structure
+
 ```bash
 app/
 ├── main.py          - FastAPI app
@@ -11,9 +14,10 @@ app/
 
 config/
 └── config.py        - configuration setup
- 
+
 segmentor/
 ├── datasets/        - datasets
+├── notebook.ipynb   - notebook file
 ├── data.py          - data processing components
 ├── eval.py          - evaluation components
 ├── main.py          - training/optimization pipelines
@@ -22,28 +26,27 @@ segmentor/
 ├── train.py         - training components
 └── utils.py         - supplementary utilities
 ```
+
 ## Workflows
 
 1. Set up environment.
+
 ```bash
 python -m venv venv         # create environment
-source venv/bin/activate    # activate environment 
+source venv/bin/activate    # activate environment
 ```
 
 ## Acknowledgements
 
- - [Pytorch](https://pytorch.org/docs/stable/index.html)
- - [MONAI](https://monai.io/index.html)
- - [Made With ML](https://madewithml.com/)
- - [Preprocessing 3D Volumes for Tumor Segmentation Using Monai and PyTorch](https://pycad.co/preprocessing-3d-volumes-for-tumor-segmentation-using-monai-and-pytorch/)
-
+- [Pytorch](https://pytorch.org/docs/stable/index.html)
+- [MONAI](https://monai.io/index.html)
+- [Made With ML](https://madewithml.com/)
+- [Preprocessing 3D Volumes for Tumor Segmentation Using Monai and PyTorch](https://pycad.co/preprocessing-3d-volumes-for-tumor-segmentation-using-monai-and-pytorch/)
 
 ## Authors
 
 - [@bhimrazy](https://www.github.com/bhimrazy)
 
-
 ## License
 
 [MIT](https://github.com/bhimrazy/Lungs-Tumor-segmentation/blob/main/LICENSE)
-
