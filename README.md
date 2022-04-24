@@ -1,7 +1,7 @@
 # Lungs-Tumor-segmentation
 This project aims to segment lungs tumor from CT scans of Decathlon Lungs dataset using Pytorch and MONAI .
 
-> This project is still under development.
+> This project is __still under development__.
 ## Directory structure
 ```bash
 app/
