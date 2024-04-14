@@ -131,3 +131,4 @@ dmypy.json
 #custom
 *.tar
 segmentor/datasets/*
+data
