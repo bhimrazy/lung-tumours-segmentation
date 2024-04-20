@@ -7,24 +7,26 @@ This project aims to segment lungs tumor from CT scans of Decathlon Lungs datase
 ## Directory structure
 
 ```bash
-app/
-├── main.py          - FastAPI app
-├── gunicorn.py      - WSGI script
-└── schemas.py       - API model schemas
-
-config/
-└── config.py        - configuration setup
-
-segmentor/
-├── datasets/        - datasets
-├── notebook.ipynb   - notebook file
-├── data.py          - data processing components
-├── eval.py          - evaluation components
-├── main.py          - training/optimization pipelines
-├── models.py        - model architectures
-├── predict.py       - inference components
-├── train.py         - training components
-└── utils.py         - supplementary utilities
+├── LICENSE                    # License file
+├── README.md                  # Readme file
+├── app
+│   ├── gunicorn.py            # Configuration for Gunicorn server
+│   ├── main.py                # Main application file
+│   └── schemas.py             # Schema definitions
+├── artifacts
+│   └── checkpoints            # Directory for storing model checkpoints
+├── conf
+│   └── config.yaml            # Configuration file in YAML format
+├── data/                      # data dir
+├── logs/                      # Log dir  
+├── notebook.ipynb             # Jupyter notebook file
+├── requirements.txt           # File listing required Python packages
+├── src/
+│   ├── data_module.py         # Module for data processing
+│   ├── model.py               # Module containing the model definition
+│   └── utils.py               # Utility functions module
+├── download_data.sh           # Shell script for downloading data
+└── train.py                   # Script for training the model
 ```
 
 ## Workflows
@@ -34,6 +36,11 @@ segmentor/
 ```bash
 python -m venv venv         # create environment
 source venv/bin/activate    # activate environment
+```
+
+2. Train model
+```
+python train.py
 ```
 
 ## References
