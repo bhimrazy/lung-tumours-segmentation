@@ -1,6 +1,10 @@
-# Lungs-Tumor-segmentation
+# Lungs-Tumour-segmentation
 
 This project aims to segment lungs tumor from CT scans of Decathlon Lungs dataset using Pytorch and MONAI .
+
+<a target="_blank" href="https://lightning.ai/bhimrajyadav/studios/empowering-3d-lung-tumour-segmentation-with-monai">
+  <img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/app-2/studio-badge.svg" alt="Open In Studio"/>
+</a>
 
 > This project is **_still under development_**.
 
