@@ -36,12 +36,13 @@ python -m venv venv         # create environment
 source venv/bin/activate    # activate environment
 ```
 
-## Acknowledgements
+## References
 
-- [Pytorch](https://pytorch.org/docs/stable/index.html)
+- [PyTorch](https://pytorch.org/docs/stable/index.html)
 - [MONAI](https://monai.io/index.html)
-- [Made With ML](https://madewithml.com/)
-- [Preprocessing 3D Volumes for Tumor Segmentation Using Monai and PyTorch](https://pycad.co/preprocessing-3d-volumes-for-tumor-segmentation-using-monai-and-pytorch/)
+- [LightningAI](https://lightning.ai/)
+- [Brain Tumor Segmentation using MONAI and WandB](https://wandb.ai/geekyrakshit/brain-tumor-segmentation/reports/Brain-Tumor-Segmentation-using-MONAI-and-WandB---Vmlldzo0MjUzODIw)
+- https://github.com/Project-MONAI/tutorials/tree/main/3d_segmentation
 
 ## Authors
 
@@ -49,4 +50,4 @@ source venv/bin/activate    # activate environment
 
 ## License
 
-[MIT](https://github.com/bhimrazy/Lungs-Tumor-segmentation/blob/main/LICENSE)
+[MIT](./LICENSE)
