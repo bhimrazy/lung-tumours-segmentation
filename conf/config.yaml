@@ -1,0 +1,21 @@
+# data:
+# one of list : "Task01_BrainTumour", "Task02_Heart",
+# "Task03_Liver", "Task04_Hippocampus", "Task05_Prostate",
+# "Task06_Lung", "Task07_Pancreas", "Task08_HepaticVessel",
+#  "Task09_Spleen", "Task10_Colon".
+task: "Task06_Lung"
+root_dir: "./data"
+
+# experiment:
+seed: 42
+batch_size: 1
+num_workers: 10
+# model_name
+# in_channels
+# out_channels
+max_epochs: 20
+learning_rate: 3e-3
+use_scheduler: true
+
+logs_dir: logs
+checkpoint_dirpath: artifacts/checkpoints

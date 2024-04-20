@@ -11,6 +11,7 @@ from lightning.pytorch.callbacks import (
 from lightning.pytorch.loggers import TensorBoardLogger
 from omegaconf import DictConfig
 from src.data_module import DecathlonDataModule
+from src.model import DecathlonModel
 from src.utils import generate_run_id
 
 
@@ -34,11 +35,9 @@ def train(cfg: DictConfig) -> None:
     dm.setup()
 
     # Init model from datamodule's attributes
-    model = DRModel(
-        num_classes=dm.num_classes,
-        model_name=cfg.model_name,
+    model = DecathlonModel(
+        # num_classes=dm.num_classes,
         learning_rate=cfg.learning_rate,
-        class_weights=dm.class_weights,
         use_scheduler=cfg.use_scheduler,
     )
 
@@ -50,7 +49,7 @@ def train(cfg: DictConfig) -> None:
         mode="min",
         save_top_k=2,
         dirpath=join(cfg.checkpoint_dirpath, run_id),
-        filename="{epoch}-{step}-{val_loss:.2f}-{val_acc:.2f}-{val_kappa:.2f}",
+        filename="{epoch}-{step}-{val_loss:.2f}-{val_dice:.2f}",
     )
 
     # Init LearningRateMonitor
